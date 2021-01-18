@@ -1,0 +1,9 @@
+<section class="container">
+  <ul class="simon">
+    <li (click)="guess(0)" [ngClass]="(highlightedColor === 0) ? 'active' : ''" #green class="green"></li>
+    <li (click)="guess(1)" [ngClass]="(highlightedColor === 1) ? 'active' : ''" #red class="red"></li>
+    <li (click)="guess(2)" [ngClass]="(highlightedColor === 2) ? 'active' : ''" #yellow class="yellow"></li>
+    <li (click)="guess(3)" [ngClass]="(highlightedColor === 3) ? 'active' : ''" #blue class="blue"></li>
+  </ul>
+  <p *ngIf="!gameStarted" class="start" (click)="startSimon()">Start</p>
+</section>

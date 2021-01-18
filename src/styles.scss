@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #004e92, #000428);
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
